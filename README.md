@@ -291,3 +291,4 @@ Webhook Integration: Stripe webhook handling with signature verification
 Summary
 This application demonstrates advanced prompt engineering (structured outputs, role-playing, chain-of-thought), modern BI techniques (predictive modeling, cohort analysis, time-series forecasting), and ethical AI practices (consent management, transparency, audit trails).
 
+https://benevolent-crm-98bd0543.base44.app

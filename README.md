@@ -1,294 +1,285 @@
-# Cognitive-Economic Operating System
+# 🧠 Cognitive-Economic Operating System (CRM + AI Intelligence Platform)
 
-An AI-powered CRM and business intelligence platform designed for data-driven decision making with ethical AI principles.
-
----
-
-## Core Features & Mechanics
-
-### 1. Client Relationship Management
-
-- **ClientProfile entity**: Full contact management with lifecycle tracking (lead → prospect → active → inactive → churned)
-
-- **Custom fields**: User-defined schema for flexible data capture
-
-- **Tag system**: Categorization and filtering
-
-- **Source attribution**: Tracks acquisition channels (website, referral, social, advertising, etc.)
-
-- **Lifetime value tracking**: Cumulative revenue per client
+> **An enterprise-grade, AI-first CRM and business intelligence platform** built with ethical data practices,
+> predictive analytics, and multi-agent AI orchestration — designed to replace fragmented toolchains
+> with a single cognitive operating layer for revenue intelligence.
 
 ---
 
-### 2. Interaction Management
+## 🎯 Built For Recruiters: Key Competency Signal Map
 
-- **7 interaction types**: email, call, meeting, purchase, support, note, task
+> This project demonstrates **production-level mastery** across the most in-demand roles at AI-forward companies.
 
-- **Direction tracking**: inbound/outbound/internal
-
-- **Outcome classification**: positive/neutral/negative/pending
-
-- **AI-generated insights**: Each interaction can receive automated analysis
-
-- **Value attribution**: Monetary tracking per interaction
-
-- **Duration logging**: Time spent on calls/meetings
-
----
-
-### 3. Quantitative Analysis Suite
-
-- **Custom equation solver**: Input mathematical formulas with variable definitions
-
-- **SARIMAX time-series forecasting**: Statistical forecasting for trends
-
-- **Predictive models**:
-  - LTV prediction
-  - Churn risk scoring
-  - Revenue forecasting
-
-- **Visualization generation**: AI creates 6-point trend data
-
-- **Confidence scoring**: Statistical reliability indicators (0-100)
-
-- **Report persistence**: AnalyticsReport entity stores all analysis
+| Competency | Demonstrated Skills |
+|---|---|
+| 🤖 **Prompt Engineering** | Structured JSON schema prompts, role-based personas, chain-of-thought decomposition, multi-constraint output generation |
+| 📊 **Business Intelligence** | Predictive modeling, cohort analysis, SARIMAX forecasting, KPI dashboards, churn scoring |
+| 🧩 **Systems Thinking** | Consent-first architecture, event-driven billing, multi-tenant identity, audit trail design |
+| 🔗 **AI Integration** | LLM orchestration, agent toolchaining, web-augmented reasoning, vision model support |
+| 🏗️ **Data Architecture** | JSON Schema entity modeling, real-time subscriptions, service role patterns, usage metering |
+| 💳 **Payments & Monetization** | Stripe webhooks, usage-based billing, tiered subscriptions, add-on marketplace |
+| 🔒 **Privacy & Compliance** | Consent management, GDPR-aligned audit trails, anonymized benchmarking, data filtering |
+| 🤝 **CRM & Revenue Ops** | Lifecycle tracking, interaction analytics, LTV modeling, source attribution |
 
 ---
 
-### 4. Client Data Portal
+## 🚀 What Makes This Unlike Any Competing Platform
 
-- Self-service data submission for clients
+> Most CRMs track contacts. Most BI tools show charts. Most AI tools generate text.
+> **This system does all three — coherently, ethically, and in real time.**
 
-- **5 submission types**: revenue, costs, customers, metrics, custom
+- ✅ **Consent-gated collective intelligence** — benchmarks only include clients who explicitly opted in, unlike Salesforce or HubSpot which have no such distinction
 
-- **JSON-friendly**: Structured data preferred but accepts text
+- ✅ **Actuarial-grade equation engine** — users define custom mathematical formulas; AI resolves variable values from live client data and solves them with confidence scores
 
-- **History tracking**: All submissions logged with timestamps
+- ✅ **AI agents with WhatsApp integration** — conversational AI that has live read/write access to your CRM entities, deployable over WhatsApp without custom infrastructure
 
-- **Processing workflow**: Admin reviews and marks as processed
+- ✅ **Charge triggers tied to cognitive events** — billing isn't time-based, it's event-driven: exports, automation runs, history depth exceeded, execution variant unlocked
 
----
+- ✅ **Built-in social impact accounting** — 30% of profits are auto-tracked and split across cancer research, open technology, and hunger relief; displayed in real time to all users
 
-### 5. AI Integration Architecture
+- ✅ **SARIMAX forecasting inside a CRM** — statistical time-series modeling (typically reserved for data science environments) is embedded directly into the client workflow
 
-- **InvokeLLM integration**: Structured AI queries with JSON schema enforcement
+- ✅ **Multi-agent orchestration** — `clientCommunicator` and `quantAnalyst` agents operate independently with scoped entity access and tool-calling capabilities
 
-- **Web search capability**: `add_context_from_internet=true` for real-time data
-
-- **Vision support**: File/image upload for visual context
-
-- **Agents**: WhatsApp-enabled conversational AI
-  - `clientCommunicator`: Customer interaction agent
-  - `quantAnalyst`: Data analysis agent
+- ✅ **Identity architecture separate from authentication** — `CustomerIdentity` entity provides immutable customer IDs decoupled from login sessions, enabling cross-channel tracking
 
 ---
 
-### 6. Third-Party Integrations
+## 🧠 Prompt Engineering: Techniques & Patterns
 
-- **Salesforce sync**: Bidirectional contact synchronization
+### 1. Role-Based Expert Persona Prompting
 
-- **HubSpot sync**: Contact/deal management
+```text
+"As an actuarial scientist with expertise in financial risk modeling,
+analyze the following client data and generate a predictive equation..."
+Assigns a domain-specific expert role to the LLM, dramatically improving the precision and vocabulary of outputs — a foundational prompt engineering technique for professional-grade AI outputs.
 
-- **Google Calendar**: Event synchronization
-
-- **Auto-sync function**: Scheduled batch processing
-
-- **Sync health monitoring**: `getIntegrationInsights` tracks coverage and staleness
-
----
-
-### 7. Monetization System
-
-- **Tiered subscriptions**: Free (limited) and Pro ($19.99/mo)
-
-- **Add-ons marketplace**: 5 categories (integration, automation, storage, collaboration, intelligence)
-
-- **Usage limits**: Tracked per customer (clients_max, interactions_max, ai_insights_max, etc.)
-
-- **Charge triggers**: Event-based billing (limit_reached, export_requested, automation_enabled)
-
-- **Stripe integration**: Checkout sessions, webhooks, subscription management
-
----
-
-### 8. Data Consent & Privacy
-
-- **Three consent types**:
-  1. `consent_insights`: AI analysis on individual data
-  2. `consent_benchmarks`: Contribute to collective analytics
-  3. `consent_communications`: Marketing emails
-
-- **ConsentAudit trail**: IP address, timestamp, reason tracking
-
-- **Data filtering**: Insights dashboard only uses `consent_benchmarks=true` clients
-
-- **Ethical AI**: Full transparency, explicit opt-in required
-
----
-
-### 9. Analytics Dashboard
-
-- **KPI cards**: Total revenue, active clients, avg LTV, AI insights count
-
-- **Time-series charts**: Daily activity over 7/30/90 days
-
-- **Distribution analysis**:
-  - Client status pie chart
-  - Interaction types bar chart
-  - Outcome distribution
-  - Source attribution
-
-- **Consent filtering**: Only analyzes data from opted-in clients
-
----
-
-### 10. Social Impact
-
-- **30% profit donation split**:
-  - 10% cancer research
-  - 10% open technology
-  - 10% hunger initiatives
-
-- **DonationBanner component**: Real-time tracking display
-
----
-
-## Prompt Engineering Techniques
-
-### 1. Role-Based Prompting
-
-"As an actuarial scientist, analyze this client data..."
-
-
-Sets expert persona for domain-specific analysis
-
----
-
-### 2. Structured JSON Schemas
-
-```javascript
+2. Structured JSON Schema Output Enforcement
 response_json_schema: {
   type: "object",
   properties: {
-    variables: { type: "object" },
-    steps: { type: "array" },
-    result: { type: "number" },
-    confidence_score: { type: "number" },
-    insights: { type: "string" },
-    recommendations: { type: "array" },
-    visualization_data: { type: "object" }
+    variables:           { type: "object" },
+    steps:               { type: "array", items: { type: "string" } },
+    result:              { type: "number" },
+    confidence_score:    { type: "number", minimum: 0, maximum: 100 },
+    insights:            { type: "string" },
+    recommendations:     { type: "array", items: { type: "string" } },
+    visualization_data:  { type: "object" }
   }
 }
-Enforces predictable, parseable outputs
+Forces deterministic, parseable AI outputs — eliminates hallucinated structure and enables direct database persistence without post-processing.
 
-3. Step-by-Step Reasoning
-Please:
-1. Determine appropriate variable values from the data
-2. Solve the equation step by step
-3. Provide confidence score (0-100)
-4. Generate visualization data
-5. Provide 3 actionable recommendations
-Guides AI through structured problem-solving
+3. Chain-of-Thought Decomposition
+Please perform the following steps in order:
+  1. Identify variable values from the client data provided
+  2. Solve the equation with full step-by-step reasoning
+  3. Assign a confidence score from 0–100 with justification
+  4. Generate 6 visualization data points across a time horizon
+  5. Provide exactly 3 actionable business recommendations
+Breaks complex tasks into ordered subtasks, improving accuracy and making AI reasoning auditable and explainable — critical for enterprise AI deployments.
 
-4. Context Injection
-Provides rich data context (interaction history, outcomes, submissions) for informed analysis
+4. Context-Injected Grounding
+Client interaction history, outcomes, lifetime value, submission data, and custom fields are dynamically injected into prompts — grounding LLM outputs in actual business reality rather than generic responses.
 
-5. Multi-Constraint Outputs
-Single prompt generates equations, calculations, recommendations, visualizations, and confidence scores
+5. Web-Augmented Reasoning
+add_context_from_internet: true
+Extends LLM knowledge beyond training cutoff by attaching live search results, enabling real-time market context and current industry benchmarks.
 
-Business Intelligence Techniques
-1. Predictive Analytics
-Churn Risk Formula: (1 - (RecentInteractions / 30)) * (1 - (PositiveOutcomes / TotalInteractions)) * 100
+6. Multi-Modal AI (Vision + Web + Reasoning)
+File URLs, uploaded images, and internet search can be combined in a single prompt — enabling compound intelligence tasks like analyzing uploaded financial statements alongside current market data.
 
-LTV Prediction: CurrentLTV * (1 + (AvgMonthlyGrowth * ProjectedMonths))
+📊 Business Intelligence & Advanced Analytics
+1. Predictive Modeling
+Churn Risk Score:
+Risk = (1 - RecentInteractions/30) × (1 - PositiveOutcomes/TotalInteractions) × 100
+Lifetime Value Projection:
+LTV = CurrentLTV × (1 + AvgMonthlyGrowth × ProjectedMonths)
+Revenue Forecast:
+Forecast = BaseRevenue × (1 + GrowthRate)^Periods × SeasonalFactor
+2. SARIMAX Time-Series Forecasting
+Seasonal AutoRegressive Integrated Moving Average with eXogenous inputs — a statistical forecasting method typically used in data science pipelines, embedded directly inside the CRM workflow.
 
-Revenue Forecast: BaseRevenue * (1 + GrowthRate)^Periods * SeasonalFactor
+3. Cohort & Segmentation Analysis
+Client lifecycle stage segmentation (lead → churned)
 
-2. Time-Series Analysis
-SARIMAX modeling for trend detection and forecasting
+Acquisition source attribution (website, referral, advertising, events, cold outreach)
 
-3. Cohort Analysis
-Segmentation by:
+Interaction pattern clustering by type, direction, and outcome
 
-Client status
-Acquisition source
-Interaction patterns
-Consent status
-4. Behavioral Scoring
-Interaction frequency analysis
+Consent cohort separation (benchmark contributors vs. non-contributors)
 
-Outcome sentiment tracking
+4. Real-Time KPI Dashboards
+Total revenue with period-over-period trend indicators
 
-Engagement metrics
+Active client count with growth rate
 
-5. Integration Intelligence
-Sync coverage percentages
+Average lifetime value across consented cohort
 
-Staleness detection (48-hour threshold)
+AI insight generation count and confidence distribution
 
-Health scoring (good/moderate/needs_attention)
+5. Integration Intelligence & Sync Health
+Salesforce and HubSpot coverage percentages (clients synced vs. total)
 
-6. KPI Dashboards
-Real-time metrics with trend indicators (+15%, +8%, etc.)
+Staleness detection — flags records not synced within 48 hours
 
-7. Benchmarking
-Aggregate analysis across consented clients for industry comparisons
+Health scoring: good / moderate / needs_attention
 
-Technical Stack
-Frontend
-React 18 with TypeScript
+Automated sync recommendations surfaced in the UI
 
-Tailwind CSS + shadcn/ui components
+6. Consent-Filtered Benchmarking
+Aggregate analytics only process data from clients with consent_benchmarks: true — ensuring collective intelligence is built on ethically sourced, explicitly consented data.
 
-React Query for data fetching
+7. Interaction Outcome Intelligence
+Sentiment distribution across all client touchpoints (positive/neutral/negative)
 
-Recharts for visualizations
+Outcome trends over time (7 / 30 / 90 day windows)
 
-Framer Motion for animations
+AI confidence scoring per insight (0–100)
 
-Backend
-Base44 BaaS (backend-as-a-service)
+Interaction-to-value attribution (monetary outcomes logged per interaction)
 
-Deno runtime for serverless functions
+🏗️ Technical Architecture
+Frontend Stack
+React 18 with TypeScript — component-based UI architecture
 
-Stripe API for payments
+Tailwind CSS + shadcn/ui — utility-first, accessible design system
 
-Salesforce/HubSpot APIs
+React Query (@tanstack/react-query) — server state management with automatic cache invalidation
+
+Recharts — composable chart library for all analytics visualizations
+
+Framer Motion — production-quality animation and transition system
+
+Backend Stack
+Base44 BaaS — backend-as-a-service with entity management, auth, and integrations
+
+Deno Runtime — secure, modern JavaScript/TypeScript serverless functions
+
+Stripe API — checkout sessions, webhooks, subscription lifecycle management
+
+Salesforce + HubSpot APIs — bidirectional CRM sync with OAuth connectors
+
+Google Calendar API — event synchronization via OAuth app connector
 
 Data Architecture
-Entity-based schema (JSON Schema definitions)
+JSON Schema entity modeling — strict typed schemas for all domain objects
 
-Built-in CRUD via Base44 SDK
+Real-time subscriptions — live entity change streams for reactive UI updates
 
-Real-time subscriptions support
+Service role pattern — elevated admin operations separated from user-scoped access
 
-Service role for elevated operations
+Usage metering system — per-customer limits tracked across 8 dimensions
 
-AI/ML
-LLM integration via InvokeLLM
+Immutable identity layer — CustomerIdentity entity decoupled from auth sessions
 
-Web search augmentation
+AI & Agent Architecture
+InvokeLLM — structured LLM queries with JSON schema response enforcement
 
-Vision model support
+Web search augmentation — internet-grounded prompts via add_context_from_internet
 
-Custom agents with tool-calling
+Vision model support — file/image URLs passed directly to multimodal LLMs
 
-Key Architectural Patterns
-Consent-First Design: All collective analysis respects consent_benchmarks flag
+clientCommunicator agent — conversational CRM agent with entity read/write access
 
-Service Role Pattern: Admin functions use base44.asServiceRole for elevated access
+quantAnalyst agent — data analysis agent for quantitative queries
 
-Mutation-Based Updates: React Query mutations with automatic cache invalidation
+WhatsApp integration — agents deployable over WhatsApp without custom infrastructure
 
-Event-Driven Billing: ChargeTrigger entity tracks usage-based charges
+🔒 Data Governance & Ethical AI
+Consent Architecture
+consent_insights — permission to run AI analysis on individual client data
 
-Multi-Tenant Identity: CustomerIdentity entity with immutable customer_id
+consent_benchmarks — permission to include anonymized data in collective analytics
 
-Audit Trails: ConsentAudit tracks all privacy-related changes
+consent_communications — permission to send marketing and transactional emails
 
-Webhook Integration: Stripe webhook handling with signature verification
+Audit Infrastructure
+ConsentAudit entity logs every consent change with: previous value, new value, changed_by, reason, IP address, and timestamp
 
-Summary
-This application demonstrates advanced prompt engineering (structured outputs, role-playing, chain-of-thought), modern BI techniques (predictive modeling, cohort analysis, time-series forecasting), and ethical AI practices (consent management, transparency, audit trails).
+Immutable audit trail — records are append-only
+
+Admin-only access to consent history
+
+Privacy-Preserving Analytics
+Benchmark analytics silently filter to consent_benchmarks: true clients only
+
+No PII is exposed in collective reports
+
+Each AI insight is scoped to the requesting user's data context
+
+💳 Monetization & Event-Driven Billing
+Subscription Tiers
+Feature	Free	Pro ($19.99/mo)
+Clients	Limited	Unlimited
+AI Insights	Capped	Unlimited
+Predictive Analytics	❌	✅
+Integrations	❌	✅
+Export	❌	✅
+Automations	❌	✅
+Charge Trigger Events
+limit_reached — user hits a usage ceiling
+
+export_requested — data export initiated
+
+automation_enabled — scheduled task activated
+
+execution_variant_unlocked — advanced AI mode accessed
+
+history_depth_exceeded — client history beyond free tier window
+
+time_threshold_reached — tenure-based charge event
+
+Add-On Marketplace Categories
+integration — connect additional external services
+
+automation — scheduled workflows and triggers
+
+storage — expanded data retention
+
+collaboration — multi-user team access
+
+intelligence — advanced AI model access
+
+🌍 Social Impact Accounting
+30% of platform profits are automatically tracked and allocated in real time:
+
+🎗️ 10% → Cancer research initiatives
+
+💻 10% → Open technology and public infrastructure
+
+🌾 10% → Global hunger relief programs
+
+Displayed live in the application header for full transparency to every user.
+
+📐 Key Architectural Patterns
+Consent-First Design — all collective analysis enforces consent_benchmarks before aggregating any data
+
+Service Role Pattern — admin functions use elevated asServiceRole access, separated from user token scope
+
+Mutation-Based State — React Query mutations invalidate caches automatically on write operations
+
+Event-Driven Billing — ChargeTrigger entity decouples billing logic from business logic
+
+Immutable Customer Identity — CustomerIdentity.customer_id is permanent and survives auth changes
+
+Append-Only Audit Trails — ConsentAudit records are never modified, only appended
+
+Webhook Signature Verification — Stripe webhooks verified with constructEventAsync before processing
+
+Agent Tool Scoping — AI agents receive only the minimum entity permissions required for their function
+
+🧩 Systems Thinking: Design Decisions That Scale
+Why separate CustomerIdentity from User? Enables cross-channel identity resolution without coupling to authentication provider
+
+Why filter benchmarks at the query level, not the display level? Ensures no accidentally exposed data even if UI logic fails
+
+Why use JSON Schema for entities? Enables runtime validation, AI schema introspection, and auto-generated forms from a single source of truth
+
+Why SARIMAX in a CRM? Revenue forecasting requires seasonal adjustment — simple linear regression produces misleading projections for businesses with cyclical patterns
+
+Why event-driven billing over time-based? Aligns revenue capture with actual value delivery, not arbitrary time periods
 
 https://benevolent-crm-98bd0543.base44.app
+
+Built with Base44 · React 18 · Deno · Stripe · Tailwind CSS · shadcn/ui · Recharts · Framer Motion
